@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage[implicit=false]{hyperref}
 \usepackage{multimedia}
+\usepackage{media9}
 
 \title{Things I want to understand}
 \author{Fynn Faber}
@@ -21,6 +22,14 @@
     \item 
 \end{itemize}
 
-\sound[inlinesound]{memo}{bla.mp3}
+\sound[inlinesound]{\includegraphics[scale=0.4]{play.png}}{bla.mp3}
+
+\includemedia[
+  addresource=bla.mp3,
+  flashvars={
+    source=bla.mp3
+   &autoPlay=false
+  }
+]{\fbox{Play}}{APlayer.swf}
 
 \end{document}
